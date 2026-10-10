@@ -1,0 +1,752 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Angie Orejuela writes criticism and analysis on technology, culture and the personal, and builds content and communications strategy.">
+<meta property="og:title" content="Angie Orejuela">
+<meta property="og:description" content="Writing, strategy and resume.">
+<style>[hidden]{display:none!important}body{margin:0}img{max-width:100%}</style>
+<title>Angie Orejuela Index</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=Yesteryear&family=Yellowtail&display=swap">
+<style>
+/* Layout: IDEA's heavy capital statements and cover grid, an Are.na channel header (breadcrumb + ruled info columns), a vintage swash-script signature with wide trademark caps, and grey condensed lowercase sub-lines. Five water colors only. */
+:root{
+  /* Five colors only: water #080E22 (page), water center #0E1838 (raised), water edges #04070F (deepest), text #E6EAFF, labels #C8CEE8. Lighter greys and rules are these at lower opacity. */
+  --bg:#000000; --raise:#0E1838; --deep:#04070F; --fg:#E6EAFF; --accent:#C8CEE8;
+  --muted:rgba(230,234,255,.58); --sub:rgba(230,234,255,.42); --line:rgba(200,206,232,.18); --tile:#0E1838; --tile-ink:#E6EAFF;
+  --sig:#C8CEE8; --hot:#C8CEE8; --on-hot:#04070F; --plum:#C8CEE8; --plum-ink:#C8CEE8; --plum-soft:#0E1838; --on-plum:#04070F;
+  --grout:#04070F;
+  --sans:"Archivo","Helvetica Neue",Helvetica,Arial,sans-serif;
+  --script:"Yesteryear","Brush Script MT",cursive;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font-family:var(--sans);font-stretch:100%;font-size:15px;line-height:1.45;-webkit-font-smoothing:antialiased}
+::selection{background:var(--hot);color:var(--on-hot)}
+a{color:inherit}
+button{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--hot);outline-offset:2px}
+.wrap{max-width:1180px;margin:0 auto;padding-inline:24px}
+@media (max-width:480px){.wrap{padding-inline:16px}}
+.label{font-size:11px;font-weight:600;font-stretch:112%;letter-spacing:.08em;text-transform:uppercase;color:var(--fg);margin:0}
+.sub{font-stretch:62%;font-weight:700;color:var(--sub);letter-spacing:-.005em}
+.caps{font-weight:800;text-transform:uppercase;letter-spacing:-.012em;line-height:.98}
+
+/* masthead */
+.mast{padding-block:26px 0}
+.mast .row{display:flex;justify-content:space-between;align-items:flex-start;gap:16px}
+.sig{display:inline-block;position:relative;text-decoration:none;color:var(--sig);font-family:var(--script);font-size:clamp(46px,7vw,82px);line-height:1;padding-bottom:12px}
+.sig svg{position:absolute;left:4%;right:-4%;bottom:0;width:100%;height:16px;overflow:visible}
+.sig path{fill:var(--sig)}
+.pa{font-family:"Yellowtail",var(--script);font-size:1.04em}
+.tm{font-size:10.5px;font-weight:600;font-stretch:125%;letter-spacing:.14em;text-transform:uppercase;color:var(--fg);margin:10px 0 0 6px}
+.util{display:flex;align-items:center;gap:14px;padding-top:12px}
+.search{border:0;border-bottom:1px solid var(--line);background:transparent;padding:4px 0;width:140px;color:var(--fg);font:inherit;font-size:12px;text-transform:uppercase;letter-spacing:.06em}
+.search::placeholder{color:var(--muted)}
+.me{width:40px;height:40px;flex:none;border-radius:50%;overflow:hidden;display:grid;place-items:center;background:var(--plum);color:var(--on-plum);text-decoration:none;font-family:var(--script);font-size:22px;line-height:1}
+.me img{width:100%;height:100%;object-fit:cover}
+.nav{display:flex;flex-wrap:wrap;gap:6px 22px;padding-block:22px 18px;border-bottom:1px solid var(--fg)}
+.nav a{text-decoration:none;font-size:12.5px;font-weight:500;text-transform:uppercase;letter-spacing:.03em}
+.nav a:hover{color:var(--hot)}
+.nav a[aria-current="page"]{text-decoration:underline;text-decoration-color:var(--hot);text-underline-offset:5px;text-decoration-thickness:1.5px}
+@media (max-width:640px){.search{display:none}.util{padding-top:6px}}
+
+/* home */
+.hero{padding-block:48px 52px}
+.aside{margin:22px 0 0;font-size:13px;color:var(--muted);max-width:60ch}
+.hero.has-photo{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,300px);gap:56px;align-items:end}
+.portrait{margin:0;aspect-ratio:4/5;max-width:100%;overflow:hidden;background:var(--raise)}
+.portrait img{width:100%;height:100%;object-fit:cover;display:block}
+@media (max-width:760px){.hero.has-photo{grid-template-columns:1fr;gap:28px}.portrait{max-width:260px}}
+.claim{margin:0;font-size:clamp(28px,4.25vw,55px);max-width:19ch}
+.claim .caps{display:inline}
+.claim .sub{display:block;margin-top:.2em;font-size:.9em;line-height:1;text-transform:none}
+.info{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px;padding-bottom:56px}
+.info > div{min-width:0}
+.info .label{display:block;padding-bottom:7px;border-bottom:1px solid var(--line);margin-bottom:9px}
+.info dd,.info p{margin:0;font-size:13.5px}
+.info .kv{display:flex;justify-content:space-between;gap:12px;font-size:13.5px;padding-block:2px}
+.info .kv span:first-child{color:var(--muted)}
+.info b{font-weight:600}
+@media (max-width:720px){.info{grid-template-columns:1fr;gap:22px}}
+
+.sec{display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding-block:14px;border-top:1px solid var(--fg)}
+.sec a{font-size:12px;font-weight:500;text-transform:uppercase;letter-spacing:.04em;text-decoration:none}
+.sec a:hover{color:var(--hot)}
+.covers{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;padding-block:6px 48px}
+@media (max-width:700px){.covers{grid-template-columns:1fr;gap:10px}}
+.cover{background:none;border:0;padding:0;cursor:pointer;display:grid;gap:10px;text-align:center;align-content:start;min-width:0}
+.cover .tile{aspect-ratio:2/1;padding:14px 16px}
+@media (max-width:700px){.cover .tile{aspect-ratio:auto;min-height:120px;gap:18px}}
+.cover .cap{font-size:12px;color:var(--muted);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.cover:hover .cap{color:var(--hot)}
+
+.tile{position:relative;overflow:hidden;max-width:100%;background:var(--tile);color:var(--tile-ink);text-align:left;display:flex;flex-direction:column;justify-content:space-between;padding:16px;transition:transform .15s}
+.cover:hover .tile,.sq:hover .tile{transform:translateY(-3px);box-shadow:0 3px 0 var(--hot)}
+.tile .t{margin:0;font-weight:800;text-transform:uppercase;letter-spacing:-.01em;line-height:.98;font-size:20px;text-wrap:balance}
+.tile .s{margin:0;font-stretch:62%;font-weight:700;font-size:15px;line-height:1.1;color:var(--sub)}
+.t-strategy{background:var(--raise);color:var(--fg)}
+.t-strategy .s{color:var(--sub)}
+.t-progress{background:transparent;border:1px dashed var(--muted)}
+
+.bio{display:grid;grid-template-columns:200px minmax(0,1fr);gap:24px;padding-block:22px 64px;border-top:1px solid var(--fg)}
+.bio p{margin:0 0 16px;font-size:clamp(18px,1.9vw,22px);line-height:1.42;letter-spacing:-.01em;max-width:34em}
+.btn{display:inline-block;text-decoration:none;font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:.06em;padding:10px 16px;background:var(--fg);color:var(--bg)}
+.btn:hover{background:var(--hot);color:var(--on-hot)}
+@media (max-width:640px){.bio{grid-template-columns:1fr;gap:10px}}
+.index{list-style:none;margin:0;padding:0 0 88px;border-top:1px solid var(--fg)}
+.index a{display:flex;align-items:baseline;flex-wrap:wrap;gap:4px 16px;padding:14px 0;border-bottom:1px solid var(--line);text-decoration:none}
+.index .nm{font-size:clamp(28px,4.25vw,55px)}
+.index .ds{font-size:clamp(25px,3.825vw,49.5px);line-height:1}
+.index a:hover .nm{color:var(--hot)}
+
+/* channel heads (Are.na) */
+.ch{padding-block:40px 0}
+.crumb{margin:0;font-size:clamp(24px,3vw,34px);font-weight:500;letter-spacing:-.015em;line-height:1.15}
+.crumb a{text-decoration:none;color:var(--muted)}
+.crumb a:hover{color:var(--hot)}
+.crumb .sl{color:var(--muted);margin-inline:.25em}
+.crumb .here{color:var(--plum-ink)}
+.ch .info{padding-block:28px 40px}
+
+/* writing: orbit map */
+.maphead{font-size:13px;color:var(--muted);display:flex;justify-content:space-between;gap:12px;padding-top:28px}
+.maphead button{background:none;border:0;padding:0;cursor:pointer;color:var(--hot);font-size:13px}
+.map{--bg:#080E22; --line:rgba(200,206,232,.22);
+  position:relative;height:720px;margin-block:12px 56px;overflow:hidden;color:var(--fg);
+  background:radial-gradient(ellipse 60% 55% at 50% 50%,#0E1838 0%,#080E22 55%,#04070F 100%)}
+.map ellipse{fill:none;stroke:#C8CEE8;vector-effect:non-scaling-stroke}
+.map .ring{stroke-opacity:.1;stroke-width:1}
+.map .ripple{stroke-opacity:0;stroke-width:1;transform-box:fill-box;transform-origin:center;animation:ripple 9s ease-out infinite}
+.map .ripple.r2{animation-delay:3s}.map .ripple.r3{animation-delay:6s}
+@keyframes ripple{0%{transform:scale(.12);stroke-opacity:.5}100%{transform:scale(1);stroke-opacity:0}}
+@media (prefers-reduced-motion:reduce){.map .ripple{animation:none;display:none}}
+.map .piece{background:rgba(4,7,15,.82);backdrop-filter:blur(2px);-webkit-backdrop-filter:blur(2px)}
+.map svg{position:absolute;inset:0;width:100%;height:100%}
+.map line{stroke:var(--muted);stroke-opacity:.35;stroke-width:1;vector-effect:non-scaling-stroke;transition:stroke .15s,stroke-opacity .15s}
+.map line.spoke{stroke:var(--plum-ink);stroke-opacity:.4;stroke-dasharray:3 4}
+.map line.on{stroke:var(--hot);stroke-opacity:1;stroke-width:1.6}
+.map.focus line:not(.on){stroke-opacity:.12}
+.node{position:absolute;transform:translate(-50%,-50%);transition:opacity .15s}
+.core{width:40px;height:40px;border-radius:50%;background:var(--plum);display:block;overflow:hidden;text-decoration:none;z-index:3;box-shadow:0 0 0 6px var(--bg),0 0 0 7px var(--line)}
+.core img{width:100%;height:100%;object-fit:cover}
+.hub{background:var(--fg);color:var(--bg);border:0;padding:7px 12px;font-size:11px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;cursor:pointer;white-space:nowrap;z-index:2}
+.hub span{opacity:.6;margin-left:6px}
+.hub[aria-pressed="true"]{background:var(--hot);color:var(--on-hot)}
+.hub:hover{background:var(--hot);color:var(--on-hot)}
+.piece{width:172px;background:var(--bg);color:var(--fg);border:1px solid var(--line);padding:10px 12px;text-align:left;cursor:pointer;font-size:13px;font-weight:600;line-height:1.22;z-index:1}
+.piece i{display:block;font-style:normal;font-stretch:62%;font-weight:700;font-size:13px;color:var(--sub);margin-top:6px}
+.piece.prog{border-style:dashed}
+.piece:hover,.piece.on{border-color:var(--hot)}
+.map.focus .piece:not(.on){opacity:.28}
+.map.focus .hub:not([aria-pressed="true"]){opacity:.45}
+.bytopic{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:32px 40px;padding-bottom:88px}
+.bytopic ul{list-style:none;margin:10px 0 0;padding:0;border-top:1px solid var(--line)}
+.bytopic li button{display:block;width:100%;background:none;border:0;border-bottom:1px solid var(--line);padding:10px 0;text-align:left;cursor:pointer;font-size:14.5px;font-weight:600;line-height:1.25}
+.bytopic li button:hover{color:var(--hot)}
+.bytopic li i{display:block;font-style:normal;font-stretch:62%;font-weight:700;color:var(--sub);font-size:15px;margin-top:2px}
+@media (max-width:760px){.map,.maphead{display:none}}
+
+/* strategy */
+.cases{padding-bottom:88px}
+.case{padding-block:40px;border-top:1px solid var(--fg)}
+.case h2{margin:0;font-size:clamp(24px,3vw,36px);max-width:22ch}
+.case .src{margin:6px 0 0;font-size:clamp(18px,2vw,22px);line-height:1.05}
+.case .lede{font-size:clamp(17px,1.6vw,19px);line-height:1.45;margin:18px 0 24px;max-width:38em}
+.cols{display:grid;grid-template-columns:repeat(3,minmax(0,260px));gap:10px}
+.sqr{aspect-ratio:1;max-width:100%;background:var(--plum);color:var(--on-plum);padding:18px;display:flex;flex-direction:column;justify-content:space-between;gap:16px}
+.sqr .label{color:var(--on-plum);opacity:.75}
+.sqr p{margin:0;font-size:15px;line-height:1.38}
+.note{font-size:12px;color:var(--muted);margin:14px 0 0}
+@media (max-width:760px){.case{padding-block:30px}.cols{grid-template-columns:1fr}.sqr{aspect-ratio:auto;min-height:150px}}
+
+/* strategy style: table (Are.na table view: sortable rows, click to expand) */
+.stable-wrap{padding-block:28px 88px;overflow-x:auto}
+.stable{width:100%;border-collapse:collapse;min-width:640px;font-size:14px}
+.stable th{text-align:left;font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);padding:0;border-bottom:1px solid var(--fg)}
+.stable th button{all:unset;cursor:pointer;display:flex;gap:6px;align-items:center;padding:10px 12px 10px 0}
+.stable th button:hover{color:var(--fg)}
+.stable th[aria-sort="ascending"] button::after{content:"↑";color:var(--accent)}
+.stable th[aria-sort="descending"] button::after{content:"↓";color:var(--accent)}
+.stable td{padding:14px 12px 14px 0;border-bottom:1px solid var(--line);vertical-align:top}
+.stable tr.r{cursor:pointer}
+.stable tr.r:hover td{background:rgba(200,206,232,.04)}
+.stable tr.r:hover .ti{color:var(--accent)}
+.stable .ti{font-weight:600;display:flex;gap:10px;align-items:baseline}
+.stable .ti::before{content:"+";color:var(--muted);font-weight:400;width:10px;flex:none}
+.stable tr.r[aria-expanded="true"] .ti::before{content:"−"}
+.stable .yr,.stable .fd{color:var(--muted);white-space:nowrap}
+.stable .tg{color:var(--muted)}
+.stable tr.x td{padding:0 0 22px 20px;border-bottom:1px solid var(--line)}
+.stable .xl{font-size:15px;line-height:1.45;margin:0 0 14px;max-width:46em;color:var(--fg)}
+.stable .xg{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;max-width:900px}
+.stable .xg p{margin:6px 0 0;line-height:1.5;color:rgba(230,234,255,.82)}
+.stable .xg .label{color:var(--accent)}
+@media (max-width:700px){.stable .xg{grid-template-columns:1fr;gap:12px}}
+
+/* strategy style: swim lanes (each plan is a lane in dark water, ropes between, wall at the end) */
+.cases.v-lanes{margin-block:36px 0;padding:0;color:var(--fg);
+  background:#04070F}
+.v-lanes .lane{position:relative;padding:40px clamp(18px,3vw,36px) 44px}
+.v-lanes .lane + .lane::before{content:"";position:absolute;left:0;right:0;top:-1px;height:2px;background:repeating-linear-gradient(90deg,#C8CEE8 0 22px,transparent 22px 32px);opacity:.75}
+.v-lanes h2{margin:0;font-size:clamp(22px,2.6vw,32px);max-width:24ch;color:var(--fg)}
+.v-lanes .src{margin:6px 0 0;font-size:clamp(17px,1.8vw,20px);line-height:1.05}
+.v-lanes .lede{font-size:clamp(16px,1.5vw,18px);line-height:1.45;margin:14px 0 26px;max-width:40em;color:rgba(230,234,255,.82)}
+.laps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-left:1px solid rgba(230,234,255,.35);border-right:4px solid rgba(230,234,255,.75);position:relative}
+.laps::after{content:"";position:absolute;left:0;right:0;bottom:-14px;height:1px;background:linear-gradient(90deg,transparent,rgba(200,206,232,.35) 8%,rgba(200,206,232,.35) 100%)}
+.lap{padding:4px 22px 6px;min-width:0}
+.lap + .lap{border-left:1px dashed rgba(200,206,232,.3)}
+.lap .label{color:var(--accent);display:block;margin-bottom:10px}
+.lap p{margin:0;font-size:14.5px;line-height:1.5;color:var(--fg)}
+.v-lanes .note{color:var(--muted);margin-top:26px}
+@media (max-width:760px){.laps{grid-template-columns:1fr;border-left:0;border-right:0;border-bottom:4px solid rgba(230,234,255,.75)}
+  .lap{padding:14px 0}.lap + .lap{border-left:0;border-top:1px dashed rgba(200,206,232,.3)}.laps::after{display:none}}
+
+/* strategy style: deep end (page darkens as you go deeper) */
+html,body{overflow-x:clip}
+.cases.v-deep{padding-bottom:0}
+.v-deep .case{border-top:0;margin-inline:calc(50% - 50vw);padding-inline:max(24px,calc(50vw - 566px));padding-block:56px 64px;
+  background:linear-gradient(to bottom,var(--prev) 0,var(--band) 90px,var(--band) 100%);color:var(--bfg)}
+.v-deep .case .sub{color:var(--bsub)}
+.v-deep .sqr{background:var(--bsq);color:#fff}
+.v-deep .sqr .label{color:#fff}
+.v-deep .note{color:var(--bsub)}
+.depth{display:inline-flex;align-items:center;gap:8px;margin-bottom:18px;border:1.5px solid currentColor;padding:5px 10px 4px;font-size:11px;font-weight:700;font-stretch:125%;letter-spacing:.16em;text-transform:uppercase}
+.depth::before{content:"";width:8px;height:8px;border-radius:50%;background:currentColor;opacity:.6}
+
+/* strategy style: pool tiles (glazed tiles set in grout, light moving through water) */
+.v-tiles .cols{gap:0;padding:5px;background:var(--grout);width:max-content;max-width:100%;grid-template-columns:repeat(3,minmax(0,250px));column-gap:5px}
+.v-tiles .sqr{position:relative;overflow:hidden;
+  background:
+    repeating-linear-gradient(90deg,rgba(255,255,255,.07) 0 1px,transparent 1px 25%),
+    repeating-linear-gradient(0deg,rgba(255,255,255,.07) 0 1px,transparent 1px 25%),
+    linear-gradient(160deg,#0E1838 0%,#080E22 55%,#04070F 100%);
+  box-shadow:inset 1px 1px 0 rgba(255,255,255,.18),inset -1px -1px 0 rgba(0,0,0,.25)}
+.v-tiles .sqr::before,.v-tiles .sqr::after{content:"";position:absolute;inset:-40%;pointer-events:none;mix-blend-mode:screen;opacity:.22;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='c'%3E%3CfeTurbulence type='turbulence' baseFrequency='.018 .024' numOctaves='2' seed='4'/%3E%3CfeColorMatrix values='0 0 0 0 .75 0 0 0 0 .85 0 0 0 0 1 0 0 0 -2.6 1.25'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23c)'/%3E%3C/svg%3E");
+  background-size:240px 240px;animation:caustic 14s linear infinite}
+.v-tiles .sqr::after{opacity:.16;background-size:320px 320px;animation-duration:22s;animation-direction:reverse}
+.v-tiles .sqr > *{position:relative;z-index:1}
+@keyframes caustic{from{background-position:0 0}to{background-position:240px 120px}}
+@media (prefers-reduced-motion:reduce){.v-tiles .sqr::before,.v-tiles .sqr::after{animation:none}}
+@media (max-width:760px){.v-tiles .cols{width:auto;grid-template-columns:1fr;row-gap:5px}}
+
+/* search results grid */
+.archive{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:12px;padding-block:8px 72px}
+.sq{background:none;border:0;padding:0;cursor:pointer;display:block;min-width:0}
+.sq .tile{aspect-ratio:3/4}
+.sq .tile .t{font-size:17px}
+.empty{padding-block:48px;color:var(--muted)}
+
+/* resume */
+.cv{padding-bottom:88px}
+.cv-sec{display:grid;grid-template-columns:200px minmax(0,1fr);gap:32px;padding-block:24px;border-top:1px solid var(--fg)}
+.cv-items{display:grid;gap:22px}
+.cv-item{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:2px 24px}
+.cv-item h3{margin:0;font-size:18px;font-weight:700;letter-spacing:-.01em}
+.cv-item .org{font-size:17px;line-height:1.1}
+.cv-item .when{font-size:12px;color:var(--muted);white-space:nowrap}
+.cv-item p{grid-column:1/-1;margin:6px 0 0;line-height:1.5;max-width:44em}
+.cv-item .note-line{grid-column:1/-1;margin:6px 0 0;font-size:14.5px;line-height:1.5;color:rgba(230,234,255,.82);max-width:46em}
+.cv-item ul{grid-column:1/-1;margin:10px 0 0;padding-left:18px;display:grid;gap:7px;max-width:46em}
+.cv-item li{line-height:1.5;font-size:14.5px}
+.cv-item li::marker{color:var(--accent)}
+.cv-items.tight{gap:12px}
+.skillgroups{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px 40px;max-width:820px}
+.skillgroups .sub{display:block;font-size:19px;line-height:1;margin-bottom:10px}
+.skillgroups ul{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.skillgroups li{padding:9px 0;border-bottom:1px solid var(--line);font-size:14.5px}
+@media (max-width:640px){.skillgroups{grid-template-columns:1fr}}
+.skills{display:flex;flex-wrap:wrap;gap:6px}
+.skills span{border:1px solid var(--line);padding:5px 11px;font-size:13px}
+@media (max-width:720px){.cv-sec{grid-template-columns:1fr;gap:12px}}
+
+.contact{padding-block:26px 40px}
+.contact .label{display:block;padding-bottom:7px;border-bottom:1px solid var(--line);margin-bottom:10px;max-width:640px}
+.contact p{margin:0;font-size:15px;user-select:text}
+.contact a{text-decoration:none;color:var(--accent)}
+.contact a:hover{text-decoration:underline}
+.contact .bar{color:var(--muted);margin-inline:10px}
+
+.fineprint{font-size:12px;color:var(--muted);margin:14px 0 88px}
+
+/* about */
+.about{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:72px;padding-block:36px 88px}
+.about .long p{font-size:clamp(18px,1.8vw,21px);line-height:1.5;letter-spacing:-.01em;margin:0 0 20px;max-width:34em}
+.side{display:grid;gap:36px;align-content:start}
+.tlist{margin:8px 0 0;padding:0;list-style:none;border-top:1px solid var(--line)}
+.tlist li{display:flex;justify-content:space-between;gap:16px;padding:10px 0;border-bottom:1px solid var(--line);font-size:14px}
+.tlist li span:last-child{font-stretch:62%;font-weight:700;color:var(--sub);font-size:15px;text-align:right}
+@media (max-width:820px){.about{grid-template-columns:1fr;gap:40px}}
+
+footer{padding-block:24px;font-size:12px;color:var(--muted);border-top:1px solid var(--fg)}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+
+/* block view */
+dialog{padding:0;max-width:min(960px,calc(100vw - 32px));width:100%;max-height:calc(100vh - 48px);background:var(--bg);color:var(--fg);border:1px solid var(--fg)}
+dialog::backdrop{background:rgba(4,7,15,.7)}
+.view{display:grid;grid-template-columns:minmax(0,1fr) 260px;min-height:400px}
+.view-main{padding:44px;overflow:auto}
+.view-main h2{margin:12px 0 10px;font-size:clamp(26px,3.4vw,40px)}
+.view-main .sub{display:block;font-size:20px;line-height:1.05;margin-bottom:22px}
+.view-main .lede{font-size:18px;line-height:1.5;max-width:34em;margin:0 0 24px}
+.secs{display:grid;gap:18px;max-width:40em}
+.secs p{margin:4px 0 0;line-height:1.55}
+.view-side{padding:44px 24px 24px;display:grid;align-content:start;gap:20px;font-size:14px;border-left:1px solid var(--line)}
+.view-side ul{margin:6px 0 0;padding:0;list-style:none;display:grid;gap:5px}
+.view-side .v{margin-top:4px}
+.lnk{background:none;border:0;padding:0;cursor:pointer;text-align:left}
+.lnk:hover{color:var(--hot)}
+.close{position:absolute;top:12px;right:12px;background:var(--bg);border:1px solid var(--line);width:34px;height:34px;cursor:pointer;font-size:16px;line-height:1}
+@media (max-width:720px){.view{grid-template-columns:1fr}.view-main{padding:32px 20px}.view-side{border-left:0;border-top:1px solid var(--line);padding:24px 20px}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+
+<header class="mast wrap">
+  <div class="row">
+    <div>
+      <a class="sig" href="#home"><span id="sig-name">Angie Orejuela</span><svg viewBox="0 0 300 16" preserveAspectRatio="none" aria-hidden="true"><path d="M2 6 C 70 18, 200 18, 298 1 C 210 12, 80 14, 2 6 Z"/></svg></a>
+      <p class="tm" id="tm"></p>
+    </div>
+    <div class="util">
+      <input class="search" id="q" type="search" placeholder="Search" aria-label="Search the site">
+      <a class="me" id="me" href="#about" aria-label="About"></a>
+    </div>
+  </div>
+  <nav class="nav" aria-label="Pages">
+    <a href="#home" data-nav="home">Home</a>
+    <a href="#writing" data-nav="writing">Writing</a>
+    <a href="#strategy" data-nav="strategy">Strategy</a>
+    <a href="#resume" data-nav="resume">Resume</a>
+    <a href="#about" data-nav="about">About</a>
+  </nav>
+</header>
+
+<main class="wrap" id="app"></main>
+
+<footer><div class="wrap"><span>Angie Orejuela, New York</span><span>Updated October 2026</span></div></footer>
+
+<dialog id="dlg" aria-label="Block">
+  <button class="close" id="dlg-close" aria-label="Close">×</button>
+  <div class="view">
+    <div class="view-main" id="dlg-main"></div>
+    <aside class="view-side" id="dlg-side"></aside>
+  </div>
+</dialog>
+
+<script>
+/* ============================================================
+   CONTENT. Edit text here. Everything below the PAGE MACHINERY
+   line can be left alone.
+   ============================================================ */
+
+const PROFILE = {
+  // Your photo: upload the image next to index.html, then type its exact file name here, e.g. "angie.jpg"
+  photo: "",
+  name: "Angie Orejuela",
+  // Small wide capitals under your name
+  title: "Content & Communications Strategist / Cultural Critic",
+  // Black capitals, then the grey line under it
+  claim: "Criticism and analysis on technology, culture and the personal.",
+  claimSub: "plus content and communications strategy",
+  // Small grey line under the headline
+  aside: "Content and communications strategist, cultural critic and emerging technology researcher, based in New York.",
+  roles: ["Content & Communications Strategist", "Cultural critic", "Emerging technology researcher"],
+  writesOn: ["Technology", "Culture", "Money", "The personal"],
+  currently: "Writing an essay on AI industrialization",
+  based: "New York",
+  highlightsTitle: "Selected",
+  highlights: ["cloud", "upskill", "cashless"],
+  shortBio: [
+      "Angie is an essayist and strategist based in Northern New Jersey. Her practice explores how technology reshapes economic and cultural life, from the systems that move markets to the choices that shape everyday lives. Her work spans emerging technology research for a global financial market firm, analysis of Latin American markets, and stewarding fellowships in internet governance and digital policy. She is currently the Research and Content Associate for DTCC's Technology, Research and Innovation team."
+  ]
+};
+
+const CONTACT = {
+  email: "amorejuela3@gmail.com",
+  linkedin: "linkedin.com/in/angiemorejuela/",
+  location: "NJ/NY"
+};
+
+const ABOUT = [
+  "Angie Orejuela is an essayist and strategist based in Northern New Jersey. In 2025, she designed a firmwide AI upskilling strategy for one of the world’s largest financial market infrastructure firms. Her practice explores how technology reshapes economic and cultural life, from the systems that move markets to the choices that shape everyday lives.",
+  "This year, her work at DTCC has centered on helping a highly regulated institution understand and adopt emerging technology. She has shaped the firm’s approach to AI fluency across its workforce, developed communications that make complex technology strategy legible to employees, and produced a programming series of talks, showcases, and hackathons that brings research to the wider company. Her perspective is grounded in an MA in Diplomacy and International Relations from Seton Hall University, where she studied how institutions, policy, and power shape the global economy. She carried that lens into analyzing financial instruments and Latin American markets, and into research on digital governance and content policy. As a Fellow of the Internet Society and President and Senior Fellow of the Internet Law and Policy Foundry, she stewarded programs and communities working at the intersection of internet governance and digital policy.",
+  "She is currently the Research and Content Associate on DTCC’s Technology, Research and Innovation team."
+];
+
+const TERRITORY = [
+  ["Money and technology in daily life","Essays, criticism"],
+  ["Film, TV and internet culture","Reviews, commentary"],
+  ["Books and ideas","Reviews"],
+  ["AI governance and digital rights","Policy research"],
+  ["Emerging technology adoption","Strategy, comms"]
+];
+
+const BLOCKS = [
+  // WRITING
+  {id:"cloud",type:"writing",title:"Against Cloud Dominance",source:"Journal of Diplomacy and International Relations",year:"2022",
+   excerpt:"How the concentration of cloud infrastructure in a handful of providers shapes sovereignty, competition and who gets to set the rules of the internet.",
+   channels:["Internet governance","Infrastructure"]},
+  {id:"cashless",type:"writing",title:"The Rise of Cashless Economies and Governments' Neglect",source:"Journal of Diplomacy and International Relations",year:"2022",
+   excerpt:"As payments move off paper, the people without bank accounts, smartphones or stable connections are the first to fall out of the economy. A look at who governments forget.",
+   channels:["Money and technology","Financial inclusion"]},
+  {id:"dissonance",type:"writing",title:"Assessing Digital Dissonance: Human Rights and the Digital Impact of Sanctions",source:"Digital Medusa",year:"",
+   excerpt:"Sanctions aimed at states also cut ordinary people off from the tools, platforms and services they rely on. This piece weighs that cost against human rights obligations.",
+   channels:["Digital rights","Internet governance"]},
+  {id:"xr",type:"writing",title:"XR: Innovate and Protect with Community Governance",source:"Digital Medusa",year:"",
+   excerpt:"Extended reality is arriving faster than the rules for it. An argument for community-led governance that protects users without stalling invention.",
+   channels:["Emerging technology","Internet governance"]},
+  {id:"ig-ai",type:"writing",title:"The Overlooked Connection: Internet Governance and Artificial Intelligence",source:"Digital Medusa",year:"",
+   excerpt:"AI policy debates rarely borrow from two decades of internet governance. What the older field already learned about multistakeholder rulemaking.",
+   channels:["AI governance","Internet governance"]},
+  {id:"demystify",type:"writing",title:"Demystifying AI: Moving Beyond Scare Tactics and Embracing Responsible Regulation",source:"Internet Law and Policy Foundry",year:"",
+   excerpt:"Fear makes for loud headlines and weak policy. A case for regulation built on how AI systems actually behave.",
+   channels:["AI governance"]},
+  {id:"caidp",type:"writing",title:"AI and Democratic Values Index 2025: Nigeria",source:"Center for AI and Digital Policy",year:"2025",
+   excerpt:"Country assessment of Nigeria's AI policy against democratic values benchmarks, for the Center for AI and Digital Policy's annual index.",
+   channels:["AI governance","Policy research"]},
+  {id:"industrial",type:"writing",progress:true,title:"On AI Industrialization",source:"Essay in progress",year:"2026",
+   excerpt:"A standalone essay carved from a longer draft on what happens to work, culture and feeling when AI becomes industrial infrastructure.",
+   channels:["Forthcoming","Money and technology"]},
+
+  // STRATEGY
+  {id:"council",type:"strategy",title:"Internal AI Communications Campaign",source:"Financial services",year:"2026",
+   steps:["How it works","Idea to production","Examples"],
+   lede:"A campaign helping employees understand how new AI work moves through a large organization.",
+   secs:[["Context","Employees needed a clear picture of how AI ideas move from proposal to production."],["Approach","A sequenced series that starts with how decisions get made, then builds toward real examples."],["Output","Campaign architecture, message hierarchy and the opening piece in the series."]],
+   channels:["Internal communications","AI enablement"]},
+  {id:"events",type:"strategy",title:"Live Programming",source:"Various organizations",year:"2023–2026",
+   steps:["Summit","Hackathon","Expos"],
+   lede:"A member summit, a hackathon and in-person expos that brought research and new ideas into the room.",
+   secs:[["Context","Research lands better when people can see it, question it and try it themselves."],["Approach","Shaped each event around one clear question, using formats that invite participation: talks, demos, build sprints and showcases."],["Output","Programming, run of show and the communications that carried each event from invitation to follow-up."]],
+   channels:["Events","Internal communications"]},
+  {id:"outlook",type:"strategy",title:"Emerging AI Outlook",source:"Financial services",year:"2026",
+   steps:["Scan","Synthesize","Prioritize"],
+   lede:"A short internal think piece on the AI ideas most likely to matter in the year ahead.",
+   secs:[["Context","Leaders wanted a short list of what to watch, not a catalog of every trend."],["Approach","Research and synthesis across industry, academic and vendor sources, filtered for relevance."],["Output","A ranked outlook with the case for each idea and what it could change."]],
+   channels:["Research","Emerging technology"]},
+  {id:"upskill",type:"strategy",title:"AI Fluency Program",source:"Financial services",year:"2025",
+   steps:["Assess","Enable","Embed"],
+   lede:"A plan for building everyday AI fluency across a large, regulated organization.",
+   secs:[["Context","Teams were meeting new AI tools at different speeds, with uneven guidance on what to use and how."],["Approach","Grouped people by role and readiness, and paired learning with communications so each new tool arrived with a reason to use it."],["Output","A phased roadmap covering audiences, learning formats and a communications rhythm."]],
+   channels:["AI enablement","Internal communications"]},
+  {id:"playbook",type:"strategy",title:"Platform Policy Playbook",source:"Creator advocacy",year:"2024–2025",
+   steps:["Compare","Trace","Advise"],
+   lede:"A content policy playbook for helping creators navigate moderation on major social platforms.",
+   secs:[["Context","Creators were losing reach and income to false positives, demonetization and shadowbanning, with little clarity on why."],["Approach","Compared guidelines across platforms, traced how enforcement plays out in practice, and turned that into procedures for moderation, user interactions and crisis response."],["Output","A multi-platform policy playbook and policy reports guiding creators through platform communications to restore their content."]],
+   channels:["Content policy","Digital rights"]},
+  {id:"markets",type:"strategy",title:"Global Markets Monitoring",source:"Financial research publishing",year:"2023–2025",
+   steps:["Track","Verify","Explain"],
+   lede:"A steady research practice for following trading hours, instruments and economic events across global markets.",
+   secs:[["Context","An international client base needed timely, reliable information on how markets operate across many exchanges and jurisdictions."],["Approach","Tracked market and economic data with a focus on Latin America and the Caribbean, including exchanges in Mexico, Brazil and Jamaica, and turned changes into clear client analysis."],["Output","Empirical client content on financial instruments, trading hours and economic events."]],
+   channels:["Research","Money and technology"]},
+  {id:"policyresearch",type:"strategy",title:"Digital Policy Research Method",source:"Policy research and fellowships",year:"2022–2025",
+   steps:["Map","Compare","Synthesize"],
+   lede:"How I take an open-ended digital policy question to something publishable, across sanctions, AI governance and internet infrastructure.",
+   secs:[["Context","Digital policy questions are broad and fast-moving, spread across law, technology and diplomacy, with few tidy datasets."],["Approach","Literature review and source mapping, comparative analysis across countries and frameworks, then synthesis for policymakers and the public."],["Output","Blogs, a co-authored booklet, presentation decks, a country assessment for an AI and democratic values index, and symposium research on internet banking systems."]],
+   channels:["Research","Internet governance","AI governance"]}
+];
+
+const RESUME = {
+  skills: [
+    ["Craft", ["Content Strategy & Editorial Direction","Research & Long-Form Writing","Cross-Functional & Executive Communications","Event & Programming Content","Project Management"]],
+    ["Subject expertise", ["AI, Digital Assets & Fintech","Technology Ethics","Content Policy & Platform Guidelines","Foreign Policy","International Economics"]]
+  ],
+  experience: [
+    {role:"Research & Content Associate", org:"The Depository Trust & Clearing Corporation (DTCC)", when:"Apr 2025 – Present", bullets:[
+      "Produce and publish original research and thought-leadership content, including think pieces, briefs, and executive-facing analyses of developments across AI, digital assets, and next-gen systems for a global financial infrastructure firm.",
+      "Own end-to-end content and programming for internal innovation events, including hackathons, vendor/internal showcases, and expert-led seminars, driving engagement across the enterprise.",
+      "Led multi-format content production, including decks, blog posts, product demos, and email communications, translating technical initiatives into clear narratives for multidisciplinary and executive audiences."]},
+    {role:"Research Analyst", org:"Swaps Monitor Publications", when:"Aug 2023 – Apr 2025", bullets:[
+      "Produced empirical client content and analysis on financial instruments, trading hours, and economic events across global markets.",
+      "Analyzed market and economic data in Mexico, Brazil, and Jamaica (BIVA, JamEx, and B3) for an international client base."]},
+    {role:"Research Analyst", org:"Digital Medusa (Freelance)", when:"Oct 2022 – Apr 2025", bullets:[
+      "Authored blogs on digital governance and policy topics, communicating complex ideas for public and policymaker audiences.",
+      "Conducted literature searches, data management, and maintained files for research projects related to digital governance and policy.",
+      "Led content development across multiple published projects (sanctions and internet infrastructure, content virality, XR, DNS Resolvers), producing a co-authored booklet, presentation decks, and public-facing written pieces.",
+      "Presented research to external stakeholders (RIPE NCC, D//F), building organizational visibility and credibility across international digital-policy communities."]},
+    {role:"Content Policy Analyst", org:"Safelyy (Freelance)", when:"Jun 2024 – Apr 2025", bullets:[
+      "Created an extensive policy playbook for multiple social media platforms, including Pinterest and X (formerly Twitter), detailing guidelines and procedures for content moderation, user interactions, and crisis management.",
+      "Assessed the impact of online content regulations, including how false positives lead to demonetization and shadowbanning, and advised content creators on navigating platform communications to restore their content.",
+      "Partnered with international teams and a variety of stakeholders to deliver detailed policy reports that keep content creators from being demonetized and penalized."]},
+    {role:"Account Manager / Microsoft Liaison", org:"SHI International", when:"Oct 2022 – Aug 2023", bullets:[
+      "Managed client communications and purchasing pipelines for public-sector education accounts across Missouri and the Northeast.",
+      "Contributed to a 15% increase in territory sales for the State of Missouri; recipient of the President's Club award."]}
+  ],
+  fellowships: [
+    {role:"President and Senior Fellow", org:"The Internet Law and Policy Foundry", when:"Jan 2023 – Jan 2025", bullets:[
+      "Elected president; owned organization-wide communication strategy and editorial content direction for a fellowship program at the intersection of internet law, policy, and technology.",
+      "Directed marketing and content strategy for public programming, including the Digital Policy Trivia Night and a full-scale digital policy hackathon, from concept through execution.",
+      "Wrote and edited published opinion editorials on responsible technology and policy, building and sustaining the organization's public editorial voice."]},
+    {role:"Research Group Member", org:"Center for AI and Digital Policy", when:"Sep 2024 – Nov 2024", bullets:[
+      "Studied and analyzed international AI policy frameworks and key regulations, including the Universal Guidelines for AI and the EU AI Act, translating findings into content for public commentary.",
+      "Monitored and synthesized significant AI policy news and developments into updates for policymakers and the public.",
+      "Conducted empirical research comparing national AI policies and practices, contributing to the ongoing development of the AI and Democratic Values Index."]},
+    {role:"Fellow", org:"The Internet Society", when:"Jan 2023 – Jul 2023", bullets:[
+      "Selected for a competitive 15-fellow program; produced original research and public-facing content on internet governance, digital diplomacy, and advocacy.",
+      "Participated in a project symposium, presenting original research on successful internet banking systems in African and South Asian countries."]}
+  ],
+  education: [
+    {role:"Master of Arts (MA), Diplomacy and International Relations", org:"Seton Hall University", note:"Thesis on M-Pesa: the regulatory and policy frameworks behind its success in Kenya and its impact on unbanked communities."},
+    {role:"Bachelor of Arts (BA), English Literature", org:"Rutgers University–New Brunswick"}
+  ]
+};
+
+/* Orbit map: you at the center, shared topics on an inner ring, pieces on an outer ring placed between the topics they touch. */
+function mapLayout(pieces){
+  const W=1000, H=720, cx=500, cy=360, TAU=Math.PI*2;
+  const counts = {};
+  pieces.forEach(p=>p.channels.forEach(c=>counts[c]=(counts[c]||0)+1));
+  const hubs = Object.keys(counts).filter(c=>counts[c]>=2).sort((a,b)=>counts[b]-counts[a]).map(name=>({name,n:counts[name]}));
+  hubs.forEach((h,i)=>{ h.a=-Math.PI/2+i*TAU/hubs.length; h.x=cx+Math.cos(h.a)*200; h.y=cy+Math.sin(h.a)*135; });
+  const nodes = pieces.map((b,i)=>{
+    const hs = hubs.filter(h=>b.channels.includes(h.name));
+    let a = Math.PI/2 + i*0.01;
+    if(hs.length){ a = Math.atan2(hs.reduce((s,h)=>s+Math.sin(h.a),0), hs.reduce((s,h)=>s+Math.cos(h.a),0)); }
+    const lines = Math.ceil(b.title.length/21) + (b.title.length>60?1:0);
+    return {b, hubs:hs, a, hh:(lines*17+44)/2};
+  });
+  // spread pieces around the ring so neighbours keep a minimum angle apart
+  const n = nodes.length, gap = Math.min(TAU/n, 0.8)*0.92;
+  nodes.sort((p,q)=>p.a-q.a);
+  for(let it=0; it<400 && n>1; it++){
+    for(let i=0;i<n;i++){
+      const p=nodes[i], q=nodes[(i+1)%n];
+      let d=q.a-p.a; if(i===n-1) d+=TAU;
+      if(d<gap){ const push=(gap-d)/2; p.a-=push; q.a+=push; }
+    }
+  }
+  const RX=385, RY=262;
+  nodes.forEach((p,i)=>{ const r = n>10 && i%2 ? .84 : 1;
+    p.x=cx+Math.cos(p.a)*RX*r; p.y=cy+Math.sin(p.a)*RY*r;
+    p.x=Math.max(100,Math.min(W-100,p.x)); p.y=Math.max(p.hh+14,Math.min(H-p.hh-14,p.y)); });
+  return {hubs, nodes, W, H, cx, cy};
+}
+
+/* ============================================================
+   PAGE MACHINERY
+   ============================================================ */
+const PAGES = {
+  writing:{title:"Writing", desc:"Essays, criticism and policy research on money, technology and the rules that govern them."},
+  strategy:{title:"Strategy", desc:"Plans I've built for organizations and for my own practice."},
+  resume:{title:"Resume", desc:"Roles, education and skills."},
+  about:{title:"About", desc:"The long version."}
+};
+const TYPE_LABEL = {writing:"Writing",strategy:"Strategy"};
+let state = {page:"home", q:"", channel:null};
+
+const $ = s => document.querySelector(s);
+const esc = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const byType = t => BLOCKS.filter(b=>b.type===t);
+const scriptName = t => /^A/i.test(t) ? `<span class="pa">${esc(t[0])}</span>${esc(t.slice(1))}` : esc(t);
+$("#sig-name").innerHTML = scriptName(PROFILE.name);
+$("#tm").textContent = PROFILE.title;
+$("#me").innerHTML = PROFILE.photo ? `<img src="${esc(PROFILE.photo)}" alt="${esc(PROFILE.name)}">` : scriptName(PROFILE.name[0]);
+
+function tile(b){
+  const cls = b.type==="strategy" ? "t-strategy" : (b.progress ? "t-progress" : "");
+  const sub = b.progress ? "in progress" : (b.type==="strategy" ? "strategy" : b.source.toLowerCase());
+  return `<div class="tile ${cls}"><p class="t">${esc(b.title)}</p><p class="s">${esc(sub)}${b.year?`, ${esc(b.year)}`:""}</p></div>`;
+}
+const archive = items => `<div class="archive">${items.map(b=>`<button class="sq" data-id="${b.id}" aria-label="Open ${esc(b.title)}">${tile(b)}</button>`).join("")}</div>`;
+
+function home(){
+  const hl = PROFILE.highlights.map(id=>BLOCKS.find(b=>b.id===id)).filter(Boolean).slice(0,3);
+  const idx = [
+    ["writing","Writing","essays, criticism and policy research"],
+    ["strategy","Strategy","plans for organizations and my own practice"],
+    ["resume","Resume","roles, education and skills"],
+    ["about","About","the long version"]
+  ];
+  return `
+  <section class="hero${PROFILE.photo?" has-photo":""}">
+    <h1 class="claim"><span class="caps">${esc(PROFILE.claim)}</span>${PROFILE.claimSub?`<span class="sub">${esc(PROFILE.claimSub)}</span>`:""}</h1>
+    ${PROFILE.photo?`<figure class="portrait"><img src="${esc(PROFILE.photo)}" alt="${esc(PROFILE.name)}"></figure>`:""}
+  </section>
+  <div class="sec"><h2 class="label">${esc(PROFILE.highlightsTitle)}</h2><a href="#writing">All work</a></div>
+  <div class="covers">${hl.map(b=>`<button class="cover" data-id="${b.id}" aria-label="Open ${esc(b.title)}">${tile(b)}</button>`).join("")}</div>
+  <section class="bio"><h2 class="label">About</h2><div>${PROFILE.shortBio.map(p=>`<p>${esc(p)}</p>`).join("")}<a class="btn" href="#about">Read the long version</a></div></section>
+  <ul class="index">${idx.map(([k,n,d])=>`<li><a href="#${k}"><span class="nm caps">${n}</span><span class="ds sub">${d}</span></a></li>`).join("")}</ul>`;
+}
+
+function head(key, rows){
+  const p = PAGES[key];
+  return `<section class="ch">
+    <h1 class="crumb"><a href="#home">${esc(PROFILE.name)}</a><span class="sl">/</span><span class="here">${p.title}</span></h1>
+    ${rows===null ? "" : `<dl class="info">
+      <div><dt class="label">Info</dt><dd>${p.desc}</dd></div>
+      ${rows.map(([k,v])=>`<div><dt class="label">${k}</dt><dd>${v}</dd></div>`).join("")}
+    </dl>`}
+  </section>`;
+}
+
+function writingPage(){
+  const all = byType("writing");
+  const {hubs, nodes, W, H, cx, cy} = mapLayout(all);
+  const f = state.channel && hubs.some(h=>h.name===state.channel) ? state.channel : null;
+  const pos = (x,y) => `left:${(x/W*100).toFixed(2)}%;top:${(y/H*100).toFixed(2)}%`;
+  const spokes = hubs.map(h=>`<line class="spoke${f===h.name?" on":""}" x1="${cx}" y1="${cy}" x2="${h.x.toFixed(1)}" y2="${h.y.toFixed(1)}"/>`).join("");
+  const lines = spokes + nodes.flatMap(p=>p.hubs.map(h=>`<line x1="${h.x.toFixed(1)}" y1="${h.y.toFixed(1)}" x2="${p.x.toFixed(1)}" y2="${p.y.toFixed(1)}" data-piece="${p.b.id}" class="${f===h.name?"on":""}"/>`)).join("");
+  const groups = hubs.map(h=>[h.name, all.filter(b=>b.channels.includes(h.name))]);
+  const loose = all.filter(b=>!hubs.some(h=>b.channels.includes(h.name)));
+  if(loose.length) groups.push(["Elsewhere", loose]);
+  return `${head("writing", null)}
+  <div class="maphead"><span>Everything ripples out from a few recurring subjects. Click a subject to trace it, or a piece to read about it.</span>${f?`<button data-chan="">Clear</button>`:""}</div>
+  <div class="map${f?" focus":""}" id="map">
+    <svg viewBox="0 0 ${W} ${H}" preserveAspectRatio="none" aria-hidden="true">${[0.32,0.55,0.8,1.08,1.4].map(k=>`<ellipse class="ring" cx="${cx}" cy="${cy}" rx="${(385*k).toFixed(0)}" ry="${(262*k).toFixed(0)}"/>`).join("")}${[1,2,3].map(i=>`<ellipse class="ripple r${i}" cx="${cx}" cy="${cy}" rx="560" ry="380"/>`).join("")}${lines}</svg>
+    <a class="node core" style="${pos(cx,cy)}" href="#about" aria-label="About ${esc(PROFILE.name)}">${PROFILE.photo?`<img src="${esc(PROFILE.photo)}" alt="">`:""}</a>
+    ${hubs.map(h=>`<button class="node hub" style="${pos(h.x,h.y)}" data-chan="${f===h.name?"":esc(h.name)}" aria-pressed="${f===h.name}">${esc(h.name)}<span>${h.n}</span></button>`).join("")}
+    ${nodes.map(p=>`<button class="node piece${p.b.progress?" prog":""}${f&&p.b.channels.includes(f)?" on":""}" style="${pos(p.x,p.y)}" data-id="${p.b.id}" data-hover="${p.b.id}">${esc(p.b.title)}<i>${esc(p.b.progress?"in progress":(p.b.year||p.b.source.toLowerCase()))}</i></button>`).join("")}
+  </div>
+  <div class="bytopic">${groups.map(([name,items])=>`<section><h2 class="label">${esc(name)}</h2><ul>${items.map(b=>`<li><button data-id="${b.id}">${esc(b.title)}<i>${esc(b.source.toLowerCase())}${b.year?`, ${esc(b.year)}`:""}</i></button></li>`).join("")}</ul></section>`).join("")}</div>`;
+}
+
+function strategyPage(){
+  const all = byType("strategy");
+  const style = typeof STRATEGY_STYLE==="string" ? STRATEGY_STYLE : "table";
+  if(style==="table"){
+    const sk = state.sortKey || "order", dir = state.sortDir || 1;
+    const endYear = b => parseInt(String(b.year).split(/[–-]/).pop())||0;
+    const rows = all.map((b,i)=>({b,i})).sort((x,y)=>{
+      if(sk==="order") return (x.i-y.i)*dir;
+      if(sk==="year") return (endYear(x.b)-endYear(y.b))*dir || (x.i-y.i);
+      const v = k => k==="title"?x.b.title: k==="field"?x.b.source: x.b.channels.join(", ");
+      const w = k => k==="title"?y.b.title: k==="field"?y.b.source: y.b.channels.join(", ");
+      return v(sk).localeCompare(w(sk))*dir;
+    });
+    state.open = state.open || {};
+    const th = (k,label) => `<th aria-sort="${sk===k?(dir>0?"ascending":"descending"):"none"}"><button data-sort="${k}">${label}</button></th>`;
+    return `${head("strategy", null)}
+  <div class="stable-wrap"><table class="stable">
+    <thead><tr>${th("title","Plan")}${th("field","Field")}${th("tags","Focus")}${th("year","Year")}</tr></thead>
+    <tbody>${rows.map(({b})=>`
+      <tr class="r" data-row="${b.id}" tabindex="0" aria-expanded="${!!state.open[b.id]}"><td class="ti">${esc(b.title)}</td><td class="fd">${esc(b.source)}</td><td class="tg">${esc(b.channels.join(", "))}</td><td class="yr">${esc(b.year)}</td></tr>
+      ${state.open[b.id]?`<tr class="x"><td colspan="4"><p class="xl">${esc(b.lede)}</p><div class="xg">${b.secs.map(([h,p])=>`<div><span class="label">${esc(h)}</span><p>${esc(p)}</p></div>`).join("")}</div></td></tr>`:""}`).join("")}</tbody>
+  </table></div>
+  <p class="fineprint">Organization names and figures are abstracted for public sharing.</p>`;
+  }
+  if(style==="lanes") return `${head("strategy", null)}
+  <div class="cases v-lanes">${all.map(b=>`
+    <article class="lane" id="case-${b.id}">
+      <h2 class="caps">${esc(b.title)}</h2>
+      <p class="src sub">${esc(b.source.toLowerCase())}${b.year?`, ${esc(b.year)}`:""}</p>
+      <p class="lede">${esc(b.lede)}</p>
+      <div class="laps">${b.secs.map(([h,p])=>`<div class="lap"><span class="label">${esc(h)}</span><p>${esc(p)}</p></div>`).join("")}</div>
+    </article>`).join("")}</div>
+  <p class="fineprint">Organization names and figures are abstracted for public sharing.</p>`;
+  const BANDS = [["#EEF1FA","#0E1640","#7F89AE","#14246B"],["#C9D3F0","#0E1640","#56628F","#14246B"],["#3A4FA8","#FFFFFF","#C2CCF2","#0F1B55"],["#1A2766","#FFFFFF","#97A4DB","#0A1240"],["#070C1E","#E6EAFF","#7983AE","#1F2F86"]];
+  const n = all.length;
+  const band = i => BANDS[n>1 ? Math.round(i/(n-1)*(BANDS.length-1)) : 0];
+  const depthLabel = i => i===0 ? "Shallow end" : (i===n-1 ? "Deep end" : `${3+i*2} ft`);
+  const deepStyle = i => { const [bg,fg,sb,sq]=band(i), prev = i ? band(i-1)[0] : "var(--bg)"; return ` style="--band:${bg};--prev:${prev};--bfg:${fg};--bsub:${sb};--bsq:${sq}"`; };
+  return `${head("strategy", [["Length", `${all.length} plans`], ["Note", "Organization names and figures are abstracted for public sharing."]])}
+  <div class="cases v-${style}">${all.map((b,i)=>`
+    <article class="case" id="case-${b.id}"${style==="deep"?deepStyle(i):""}>
+      ${style==="deep"?`<span class="depth">${depthLabel(i)}</span>`:""}
+      <h2 class="caps">${esc(b.title)}</h2>
+      <p class="src sub">${esc(b.source.toLowerCase())}${b.year?`, ${esc(b.year)}`:""}</p>
+      <p class="lede">${esc(b.lede)}</p>
+      <div class="cols">${b.secs.map(([h,p])=>`<div class="sqr"><span class="label">${esc(h)}</span><p>${esc(p)}</p></div>`).join("")}</div>
+    </article>`).join("")}</div>`;
+}
+
+function resume(){
+  const item = x => `<div class="cv-item"><h3>${esc(x.role)}</h3><span class="when">${esc(x.when||"")}</span><span class="org sub">${esc(x.org)}</span>${x.note?`<p class="note-line">${esc(x.note)}</p>`:""}${x.bullets?`<ul>${x.bullets.map(t=>`<li>${esc(t)}</li>`).join("")}</ul>`:""}</div>`;
+  return `${head("resume", null)}
+  <div class="contact"><span class="label">Contact</span><p>${esc(CONTACT.email)}<span class="bar">|</span><a href="https://${esc(CONTACT.linkedin)}" target="_blank" rel="noopener">${esc(CONTACT.linkedin)}</a><span class="bar">|</span>${esc(CONTACT.location)}</p></div>
+  <div class="cv">
+    <section class="cv-sec"><h2 class="label">Experience</h2><div class="cv-items">${RESUME.experience.map(item).join("")}</div></section>
+    <section class="cv-sec"><h2 class="label">Fellowships</h2><div class="cv-items">${RESUME.fellowships.map(item).join("")}</div></section>
+    <section class="cv-sec"><h2 class="label">Education</h2><div class="cv-items">${RESUME.education.map(item).join("")}</div></section>
+    <section class="cv-sec"><h2 class="label">Skills</h2><div class="skillgroups">${RESUME.skills.map(([g,list])=>`<div><span class="sub">${esc(g.toLowerCase())}</span><ul>${list.map(x=>`<li>${esc(x)}</li>`).join("")}</ul></div>`).join("")}</div></section>
+  </div>`;
+}
+
+function about(){
+  return `${head("about", null)}
+  <div class="about">
+    <div class="long">${ABOUT.map(p=>`<p>${esc(p)}</p>`).join("")}</div>
+    <div class="side">
+      <div><h2 class="label">Roles</h2><ul class="tlist">${PROFILE.roles.map(r=>`<li><span>${esc(r)}</span></li>`).join("")}</ul></div>
+      <div><h2 class="label">Territory</h2><ul class="tlist">${TERRITORY.map(([a,b])=>`<li><span>${esc(a)}</span><span>${esc(b.toLowerCase())}</span></li>`).join("")}</ul></div>
+    </div>
+  </div>`;
+}
+
+function results(){
+  const q = state.q.trim().toLowerCase();
+  const hits = BLOCKS.filter(b => [b.title,b.source,b.excerpt||"",b.lede||"",b.channels.join(" ")].join(" ").toLowerCase().includes(q));
+  const roles = [...RESUME.experience, ...RESUME.fellowships].filter(r => [r.role,r.org,(r.bullets||[]).join(" ")].join(" ").toLowerCase().includes(q));
+  const n = hits.length+roles.length;
+  return `<section class="ch"><h1 class="crumb"><a href="#home">${esc(PROFILE.name)}</a><span class="sl">/</span><span class="here">“${esc(state.q)}”</span></h1>
+    <dl class="info"><div><dt class="label">Results</dt><dd>${n}</dd></div></dl></section>
+  ${hits.length?archive(hits):""}
+  ${roles.length?`<div class="cv"><section class="cv-sec"><h2 class="label">Resume</h2><div class="cv-items">${roles.map(x=>`<div class="cv-item"><h3>${esc(x.role)}</h3><span class="when"></span><span class="org sub">${esc(x.org)}</span></div>`).join("")}</div></section></div>`:""}
+  ${!n?`<p class="empty">Nothing matches. Try a publication, a role or a topic like “AI governance”.</p>`:""}`;
+}
+
+function render(){
+  let html;
+  if(state.q.trim()) html = results();
+  else if(state.page==="writing") html = writingPage();
+  else if(state.page==="strategy") html = strategyPage();
+  else if(state.page==="resume") html = resume();
+  else if(state.page==="about") html = about();
+  else html = home();
+  $("#app").innerHTML = html;
+  document.querySelectorAll("[data-nav]").forEach(a => a.dataset.nav===state.page && !state.q.trim() ? a.setAttribute("aria-current","page") : a.removeAttribute("aria-current"));
+}
+
+function open(id){
+  const b = BLOCKS.find(x=>x.id===id); if(!b) return;
+  let main = `<span class="label">${esc(b.progress?"In progress":TYPE_LABEL[b.type])}</span><h2 class="caps">${esc(b.title)}</h2><span class="sub">${esc(b.source.toLowerCase())}${b.year?`, ${esc(b.year)}`:""}</span><p class="lede">${esc(b.type==="writing"?b.excerpt:b.lede)}</p>`;
+  if(b.secs) main += `<div class="secs">${b.secs.map(([h,p])=>`<div><span class="label">${esc(h)}</span><p>${esc(p)}</p></div>`).join("")}</div>`;
+  $("#dlg-main").innerHTML = main;
+  const others = BLOCKS.filter(x => x.id!==b.id && x.channels.some(c=>b.channels.includes(c))).slice(0,4);
+  $("#dlg-side").innerHTML = `
+    <div><span class="label">Connected to</span><ul>${b.channels.map(c=>`<li><button class="lnk" data-goto="${b.type}" data-chan-go="${esc(c)}">${esc(c)}</button></li>`).join("")}</ul></div>
+    ${others.length?`<div><span class="label">Related</span><ul>${others.map(o=>`<li><button class="lnk" data-open="${o.id}">${esc(o.title)}</button></li>`).join("")}</ul></div>`:""}
+    ${b.type==="strategy"&&b.source!=="Own practice"?`<p class="note">Organization and figures are abstracted for public sharing.</p>`:""}`;
+  const d = $("#dlg");
+  if(!d.open){ try{ d.showModal(); }catch(e){ d.setAttribute("open",""); } }
+  $("#dlg-main").scrollTop = 0;
+}
+
+document.addEventListener("click", e => {
+  const o = e.target.closest("[data-open]"); if(o){ open(o.dataset.open); return; }
+  const g = e.target.closest("[data-chan-go]");
+  if(g){ $("#dlg").close(); state.channel=g.dataset.chanGo; state.q=""; $("#q").value="";
+    if(g.dataset.goto==="strategy"){ location.hash="strategy"; return; }
+    if(location.hash.slice(1)===g.dataset.goto){ render(); } else { state.keepChannel=true; location.hash=g.dataset.goto; } window.scrollTo(0,0); return; }
+  const so = e.target.closest("[data-sort]"); if(so){ const k=so.dataset.sort; state.sortDir = state.sortKey===k ? -(state.sortDir||1) : (k==="year"?-1:1); state.sortKey=k; render(); return; }
+  const rw = e.target.closest("[data-row]"); if(rw){ state.open=state.open||{}; state.open[rw.dataset.row]=!state.open[rw.dataset.row]; render(); return; }
+  const c = e.target.closest("[data-chan]"); if(c){ state.channel=c.dataset.chan||null; render(); return; }
+  const b = e.target.closest("[data-id]"); if(b){ open(b.dataset.id); return; }
+  if(e.target.closest('a[href^="#"]')){ state.q=""; $("#q").value=""; }
+});
+document.addEventListener("mouseover", e => {
+  const n = e.target.closest("[data-hover]"); const map = $("#map"); if(!map || map.classList.contains("focus")) return;
+  map.querySelectorAll("line[data-piece]").forEach(l => l.classList.toggle("on", !!n && l.dataset.piece===n.dataset.hover));
+});
+document.addEventListener("keydown", e => { if(e.key==="Enter"||e.key===" "){ const rr=e.target.closest("[data-row]"); if(rr){ e.preventDefault(); rr.click(); } } });
+$("#dlg-close").addEventListener("click", () => $("#dlg").close());
+$("#dlg").addEventListener("click", e => { if(e.target.id==="dlg") e.target.close(); });
+$("#q").addEventListener("input", e => { state.q=e.target.value; render(); });
+
+function route(){
+  const h = location.hash.slice(1);
+  state.page = ["writing","strategy","resume","about"].includes(h) ? h : "home";
+  if(!state.keepChannel) state.channel = null;
+  state.keepChannel = false;
+  render(); window.scrollTo(0,0);
+}
+window.addEventListener("hashchange", route);
+route();
+</script>
+</body>
+</html>
