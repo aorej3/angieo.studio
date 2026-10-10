@@ -273,6 +273,9 @@ html,body{overflow-x:clip}
 
 .fineprint{font-size:12px;color:var(--muted);margin:14px 0 88px}
 
+.read{display:inline-block;margin:0 0 26px;padding:10px 16px;border:1px solid var(--accent);color:var(--accent);text-decoration:none;font-size:12px;font-weight:600;letter-spacing:.06em;text-transform:uppercase}
+.read:hover{background:var(--accent);color:var(--on-hot)}
+
 /* about */
 .about{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:72px;padding-block:36px 88px}
 .about .long p{font-size:clamp(18px,1.8vw,21px);line-height:1.5;letter-spacing:-.01em;margin:0 0 20px;max-width:34em}
@@ -389,22 +392,28 @@ const TERRITORY = [
 
 const BLOCKS = [
   // WRITING
-  {id:"cloud",type:"writing",title:"Against Cloud Dominance",source:"Journal of Diplomacy and International Relations",year:"2022",
+  {id:"cloud",type:"writing",url:"https://blogs.shu.edu/journalofdiplomacy/2022/11/against-cloud-dominance/",title:"Against Cloud Dominance",source:"Journal of Diplomacy and International Relations",year:"2022",
    excerpt:"How the concentration of cloud infrastructure in a handful of providers shapes sovereignty, competition and who gets to set the rules of the internet.",
    channels:["Internet governance","Infrastructure"]},
-  {id:"cashless",type:"writing",title:"The Rise of Cashless Economies and Governments' Neglect",source:"Journal of Diplomacy and International Relations",year:"2022",
+  {id:"cashless",type:"writing",url:"https://blogs.shu.edu/journalofdiplomacy/2022/04/the-rise-of-cashless-economies-and-governments-neglect/",title:"The Rise of Cashless Economies and Governments' Neglect",source:"Journal of Diplomacy and International Relations",year:"2022",
    excerpt:"As payments move off paper, the people without bank accounts, smartphones or stable connections are the first to fall out of the economy. A look at who governments forget.",
    channels:["Money and technology","Financial inclusion"]},
-  {id:"dissonance",type:"writing",title:"Assessing Digital Dissonance: Human Rights and the Digital Impact of Sanctions",source:"Digital Medusa",year:"",
+  {id:"dissonance",type:"writing",url:"https://digitalmedusa.org/assessing-digital-dissonance-human-rights-and-the-digital-impact-of-sanctions/",title:"Assessing Digital Dissonance: Human Rights and the Digital Impact of Sanctions",source:"Digital Medusa",year:"2024",
    excerpt:"Sanctions aimed at states also cut ordinary people off from the tools, platforms and services they rely on. This piece weighs that cost against human rights obligations.",
    channels:["Digital rights","Internet governance"]},
-  {id:"xr",type:"writing",title:"XR: Innovate and Protect with Community Governance",source:"Digital Medusa",year:"",
+  {id:"xr",type:"writing",url:"https://digitalmedusa.org/xr-innovate-and-protect-with-community-governance/",title:"XR: Innovate and Protect with Community Governance",source:"Digital Medusa",year:"2023",
    excerpt:"Extended reality is arriving faster than the rules for it. An argument for community-led governance that protects users without stalling invention.",
    channels:["Emerging technology","Internet governance"]},
-  {id:"ig-ai",type:"writing",title:"The Overlooked Connection: Internet Governance and Artificial Intelligence",source:"Digital Medusa",year:"",
+  {id:"ig-ai",type:"writing",url:"https://digitalmedusa.org/the-overlooked-connection-internet-governance-and-artificial-intelligence/",title:"The Overlooked Connection: Internet Governance and Artificial Intelligence",source:"Digital Medusa",year:"2023",
    excerpt:"AI policy debates rarely borrow from two decades of internet governance. What the older field already learned about multistakeholder rulemaking.",
    channels:["AI governance","Internet governance"]},
-  {id:"demystify",type:"writing",title:"Demystifying AI: Moving Beyond Scare Tactics and Embracing Responsible Regulation",source:"Internet Law and Policy Foundry",year:"",
+  {id:"peering",type:"writing",url:"https://digitalmedusa.org/peering-and-sanctions/",title:"Peering and Sanctions",source:"Digital Medusa, with Farzaneh Badiei",year:"2022",
+   excerpt:"How economic sanctions could reach Internet peering, the arrangements networks use to exchange traffic, from exchange points and cache servers to spillover effects on networks outside the sanctioning countries.",
+   channels:["Internet governance","Infrastructure"]},
+  {id:"sanctions-update",type:"writing",url:"https://digitalmedusa.org/sanctions-and-the-internet-project-update/",title:"Sanctions and the Internet: Project Update",source:"Digital Medusa, with Farzaneh Badiei",year:"2022",
+   excerpt:"A research update prepared for RIPE NCC on how economic sanctions affect access to IP addresses, covering regional internet registries, network operators and possible policy responses.",
+   channels:["Internet governance","Policy research"]},
+  {id:"demystify",type:"writing",url:"https://ilpfoundry.substack.com/p/demystifying-ai-moving-beyond-scare",title:"Demystifying AI: Moving Beyond Scare Tactics and Embracing Responsible Regulation",source:"Internet Law and Policy Foundry",year:"",
    excerpt:"Fear makes for loud headlines and weak policy. A case for regulation built on how AI systems actually behave.",
    channels:["AI governance"]},
   {id:"caidp",type:"writing",title:"AI and Democratic Values Index 2025: Nigeria",source:"Center for AI and Digital Policy",year:"2025",
@@ -704,7 +713,7 @@ function render(){
 
 function open(id){
   const b = BLOCKS.find(x=>x.id===id); if(!b) return;
-  let main = `<span class="label">${esc(b.progress?"In progress":TYPE_LABEL[b.type])}</span><h2 class="caps">${esc(b.title)}</h2><span class="sub">${esc(b.source.toLowerCase())}${b.year?`, ${esc(b.year)}`:""}</span><p class="lede">${esc(b.type==="writing"?b.excerpt:b.lede)}</p>`;
+  let main = `<span class="label">${esc(b.progress?"In progress":TYPE_LABEL[b.type])}</span><h2 class="caps">${esc(b.title)}</h2><span class="sub">${esc(b.source.toLowerCase())}${b.year?`, ${esc(b.year)}`:""}</span><p class="lede">${esc(b.type==="writing"?b.excerpt:b.lede)}</p>${b.url?`<a class="read" href="${esc(b.url)}" target="_blank" rel="noopener">Read the piece ↗</a>`:""}`;
   if(b.secs) main += `<div class="secs">${b.secs.map(([h,p])=>`<div><span class="label">${esc(h)}</span><p>${esc(p)}</p></div>`).join("")}</div>`;
   $("#dlg-main").innerHTML = main;
   const others = BLOCKS.filter(x => x.id!==b.id && x.channels.some(c=>b.channels.includes(c))).slice(0,4);
