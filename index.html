@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="description" content="Angie Orejuela writes criticism and analysis on technology, culture and the personal, and builds content and communications strategy.">
+<meta name="description" content="Angie Orejuela writes criticism and analysis on technology, culture and the personal, and builds content and campaign strategy.">
 <meta property="og:title" content="Angie Orejuela">
 <meta property="og:description" content="Writing, strategy and resume.">
 <style>[hidden]{display:none!important}body{margin:0}img{max-width:100%}</style>
@@ -336,7 +336,7 @@ dialog::backdrop{background:rgba(4,7,15,.7)}
 
 <main class="wrap" id="app"></main>
 
-<footer><div class="wrap"><span>Angie Orejuela, New York</span><span>Updated October 2026</span></div></footer>
+<footer><div class="wrap"><span>Angie Orejuela, NJ/NY</span><span>Updated October 2026</span></div></footer>
 
 <dialog id="dlg" aria-label="Block">
   <button class="close" id="dlg-close" aria-label="Close">×</button>
@@ -357,20 +357,20 @@ const PROFILE = {
   photo: "headshot.jpg",
   name: "Angie Orejuela",
   // Small wide capitals under your name
-  title: "Content & Communications Strategist / Cultural Critic",
+  title: "Content & Campaign Strategist / Cultural Critic",
   // Black capitals, then the grey line under it
   claim: "Criticism and analysis on technology, culture and the personal.",
-  claimSub: "plus content and communications strategy",
+  claimSub: "plus campaigns and programs people show up for",
   // Small grey line under the headline
-  aside: "Content and communications strategist, cultural critic and emerging technology researcher, based in New York.",
-  roles: ["Content & Communications Strategist", "Cultural critic", "Emerging technology researcher"],
+  aside: "Content and campaign strategist, cultural critic and emerging technology researcher, based in NJ/NY.",
+  roles: ["Content & Campaign Strategist", "Cultural critic", "Emerging technology researcher"],
   writesOn: ["Technology", "Culture", "Money", "The personal"],
-  currently: "Writing an essay on AI industrialization",
-  based: "New York",
+  currently: "",
+  based: "NJ/NY",
   highlightsTitle: "Selected",
-  highlights: ["cloud", "upskill", "cashless"],
+  highlights: ["council", "programming", "cloud"],
   shortBio: [
-      "Angie is an essayist and strategist based in Northern New Jersey. Her practice explores how technology reshapes economic and cultural life, from the systems that move markets to the choices that shape everyday lives. Her work spans emerging technology research for a global financial market firm, analysis of Latin American markets, and stewarding fellowships in internet governance and digital policy. She is currently the Research and Content Associate for DTCC's Technology, Research and Innovation team."
+      "Angie is an essayist and strategist based in NJ/NY. Her practice explores how technology reshapes economic and cultural life, from the systems that move markets to the choices that shape everyday lives. Her work spans emerging technology research for a global financial market firm, analysis of Latin American markets, and stewarding fellowships in internet governance and digital policy. She is currently the Research and Content Associate for DTCC's Technology, Research and Innovation team."
   ]
 };
 
@@ -381,8 +381,8 @@ const CONTACT = {
 };
 
 const ABOUT = [
-  "Angie Orejuela is an essayist and strategist based in Northern New Jersey. In 2025, she designed a firmwide AI upskilling strategy for one of the world’s largest financial market infrastructure firms. Her practice explores how technology reshapes economic and cultural life, from the systems that move markets to the choices that shape everyday lives.",
-  "This year, her work at DTCC has centered on helping a highly regulated institution understand and adopt emerging technology. She has shaped the firm’s approach to AI fluency across its workforce, developed communications that make complex technology strategy legible to employees, and produced a programming series of talks, showcases, and hackathons that brings research to the wider company. Her perspective is grounded in an MA in Diplomacy and International Relations from Seton Hall University, where she studied how institutions, policy, and power shape the global economy. She carried that lens into analyzing financial instruments and Latin American markets, and into research on digital governance and content policy. As a Fellow of the Internet Society and President and Senior Fellow of the Internet Law and Policy Foundry, she stewarded programs and communities working at the intersection of internet governance and digital policy.",
+  "Angie Orejuela is an essayist and strategist based in NJ/NY. In 2025, she designed a firmwide AI upskilling strategy for one of the world’s largest financial market infrastructure firms. Her practice explores how technology reshapes economic and cultural life, from the systems that move markets to the choices that shape everyday lives.",
+  "This year, her work at DTCC has centered on helping a highly regulated institution understand and adopt emerging technology. She has shaped the firm’s approach to AI fluency across its workforce, developed campaigns that make complex technology strategy legible to employees, and produced a programming series of talks, showcases, and hackathons that brings research and outside partners to the wider company. Her perspective is grounded in an MA in Diplomacy and International Relations from Seton Hall University, where she studied how institutions, policy, and power shape the global economy. She carried that lens into analyzing financial instruments and Latin American markets, and into research on digital governance and content policy. As a Fellow of the Internet Society and President and Senior Fellow of the Internet Law and Policy Foundry, she stewarded programs and communities working at the intersection of internet governance and digital policy.",
   "She is currently the Research and Content Associate on DTCC’s Technology, Research and Innovation team."
 ];
 
@@ -391,7 +391,7 @@ const TERRITORY = [
   ["Film, TV and internet culture","Reviews, commentary"],
   ["Books and ideas","Reviews"],
   ["AI governance and digital rights","Policy research"],
-  ["Emerging technology adoption","Strategy, comms"]
+  ["Emerging technology adoption","Campaigns, programs, strategy"]
 ];
 
 const BLOCKS = [
@@ -423,21 +423,28 @@ const BLOCKS = [
   {id:"caidp",type:"writing",title:"AI and Democratic Values Index 2025: Nigeria",source:"Center for AI and Digital Policy",year:"2025",
    excerpt:"Country assessment of Nigeria's AI policy against democratic values benchmarks, for the Center for AI and Digital Policy's annual index.",
    channels:["AI governance","Policy research"]},
-  {id:"industrial",type:"writing",progress:true,title:"On AI Industrialization",source:"Essay in progress",year:"2026",
-   excerpt:"A standalone essay carved from a longer draft on what happens to work, culture and feeling when AI becomes industrial infrastructure.",
-   channels:["Forthcoming","Money and technology"]},
 
   // STRATEGY
-  {id:"council",type:"strategy",title:"Internal AI Communications Campaign",source:"Financial services",year:"2026",
-   steps:["How it works","Idea to production","Examples"],
-   lede:"A campaign helping employees understand how new AI work moves through a large organization.",
-   secs:[["Context","Employees needed a clear picture of how AI ideas move from proposal to production."],["Approach","A sequenced series that starts with how decisions get made, then builds toward real examples."],["Output","Campaign architecture, message hierarchy and the opening piece in the series."]],
-   channels:["Internal communications","AI enablement"]},
-  {id:"events",type:"strategy",title:"Live Programming",source:"Various organizations",year:"2023–2026",
-   steps:["Summit","Hackathon","Expos"],
-   lede:"A member summit, a hackathon and in-person expos that brought research and new ideas into the room.",
-   secs:[["Context","Research lands better when people can see it, question it and try it themselves."],["Approach","Shaped each event around one clear question, using formats that invite participation: talks, demos, build sprints and showcases."],["Output","Programming, run of show and the communications that carried each event from invitation to follow-up."]],
-   channels:["Events","Internal communications"]},
+  {id:"council",type:"strategy",title:"AI Operating Model Launch Campaign",source:"Financial services",year:"2026",
+   steps:["Explain","Invite","Sustain"],
+   lede:"An enterprise campaign introducing a new way of turning AI ideas into funded, working projects, and inviting every employee to take part.",
+   secs:[["Brief","A new AI operating model changed which teams oversee projects and funding, and created a pipeline for new ideas. Employees needed to understand it, and leaders needed ideas coming in."],["Idea","Lead with what changes for the reader, then make the ask simple: bring an idea. Each piece moves from how decisions get made to how to get involved."],["Execution","A sequenced series across email, the intranet and team channels, with a message hierarchy that keeps every piece consistent."],["Results","55+ project ideas submitted in the first week. Leadership asked for the series to continue."]],
+   channels:["Campaigns","AI enablement"]},
+  {id:"programming",type:"strategy",title:"Enterprise Innovation Programming",source:"Financial services",year:"2025–2026",
+   steps:["Monthly","Quarterly","Annual"],
+   lede:"A year-round series of talks, community sessions and a multi-office showcase that brought emerging technology to thousands of employees.",
+   secs:[["Brief","Research lands better when people can see it, question it and try it themselves, across time zones and offices."],["Idea","A rhythm people can count on: a monthly community session I created, alternating US and APAC/EMEA times; a quarterly expert lecture; and an annual showcase that puts partners and internal teams in the same room."],["Partners","Pitched and coordinated 10+ technology partners for the showcase, including AWS, Snowflake and IBM. Helped bring the Linux Foundation Decentralized Trust member summit on site."],["Execution","Ran the series on my own end to end: graphics, communications, registration, run of show and follow-up. Wrote the playbook now used for every event."],["Results","500+ attendees per monthly session, 300+ per lecture, and 1,000+ in person across 7 offices plus 1,000+ virtual for the showcase."]],
+   channels:["Campaigns","Events","Partnerships"]},
+  {id:"hackathon",type:"strategy",title:"Internal and External Hackathons",source:"Financial services",year:"2025–2026",
+   steps:["Recruit","Run","Present"],
+   lede:"Two hackathons, one internal and one open to outside organizations, each with 40+ teams and 300+ participants.",
+   secs:[["Brief","Bring builders from inside and outside the firm together on real problems, and make the work visible to leadership."],["Partners","Wrote the pitches that brought in 70+ outside organizations, with teams and partners from Snowflake, Salesforce, Barclays, BNY, Capital One, Deutsche Bank, Morgan Stanley and IEEE."],["Execution","Owned communications, registration, moderation, presentation decks and judge relations within a collaborative organizing team."],["Results","40+ teams and 300+ participants at each event."]],
+   channels:["Events","Partnerships"]},
+  {id:"commsplan",type:"strategy",title:"R&D to Enterprise Communications Plan",source:"Financial services",year:"2025–2026",
+   steps:["Launch","Engage","Recap"],
+   lede:"One plan for how a research team talks to the whole company, from events to tool launches to the year in review.",
+   secs:[["Brief","A research and innovation team was reaching the company one announcement at a time, with no shared rhythm."],["Idea","Treat every touchpoint as part of one story: events, new products and tools, strategy and planning, and recaps of what was accomplished."],["Output","A communications plan and calendar the team now uses for all outward-facing work."]],
+   channels:["Campaigns","Internal communications"]},
   {id:"outlook",type:"strategy",title:"Emerging AI Outlook",source:"Financial services",year:"2026",
    steps:["Scan","Synthesize","Prioritize"],
    lede:"A short internal think piece on the AI ideas most likely to matter in the year ahead.",
@@ -467,14 +474,18 @@ const BLOCKS = [
 
 const RESUME = {
   skills: [
-    ["Craft", ["Content Strategy & Editorial Direction","Research & Long-Form Writing","Cross-Functional & Executive Communications","Event & Programming Content","Project Management"]],
+    ["Craft", ["Campaign Strategy & Creative Development","Content Strategy & Editorial Direction","Partner Pitches & Proposals","Programs & Live Events","Research & Long-Form Writing","Cross-Functional & Executive Communications","Project Management"]],
     ["Subject expertise", ["AI, Digital Assets & Fintech","Technology Ethics","Content Policy & Platform Guidelines","Foreign Policy","International Economics"]]
   ],
   experience: [
     {role:"Research & Content Associate", org:"The Depository Trust & Clearing Corporation (DTCC)", when:"Apr 2025 – Present", bullets:[
-      "Produce and publish original research and thought-leadership content, including think pieces, briefs, and executive-facing analyses of developments across AI, digital assets, and next-gen systems for a global financial infrastructure firm.",
-      "Own end-to-end content and programming for internal innovation events, including hackathons, vendor/internal showcases, and expert-led seminars, driving engagement across the enterprise.",
-      "Led multi-format content production, including decks, blog posts, product demos, and email communications, translating technical initiatives into clear narratives for multidisciplinary and executive audiences."]},
+      "Planned and launched an enterprise-wide campaign introducing a new AI operating model across email, intranet and team channels; the first wave drew 55+ project ideas in its first week, and leadership extended the series.",
+      "Created a monthly AI community series, alternating US and APAC/EMEA sessions, averaging 500+ attendees per session; run it end to end along with a quarterly expert lecture series of 300+ attendees.",
+      "Produced a firmwide innovation showcase across 7 offices, drawing 1,000+ in-person and 1,000+ virtual attendees; pitched and coordinated 10+ technology partners including AWS, Snowflake and IBM, and owned graphics, communications, registration and logistics.",
+      "Wrote the pitches that brought 70+ outside organizations into internal and external hackathons (40+ teams and 300+ participants each), including Snowflake, Salesforce, Barclays, BNY, Capital One, Deutsche Bank, Morgan Stanley and IEEE; ran communications, registration, moderation, presentation decks and judge relations.",
+      "Helped bring the Linux Foundation Decentralized Trust member summit to DTCC.",
+      "Wrote the event playbook and the R&D to enterprise communications plan now used for events, product and tool launches, strategy updates and recaps.",
+      "Produce research and thought-leadership content, including think pieces, briefs and executive-facing analyses of AI, digital assets and next-gen systems."]},
     {role:"Research Analyst", org:"Swaps Monitor Publications", when:"Aug 2023 – Apr 2025", bullets:[
       "Produced empirical client content and analysis on financial instruments, trading hours, and economic events across global markets.",
       "Analyzed market and economic data in Mexico, Brazil, and Jamaica (BIVA, JamEx, and B3) for an international client base."]},
@@ -484,18 +495,19 @@ const RESUME = {
       "Led content development across multiple published projects (sanctions and internet infrastructure, content virality, XR, DNS Resolvers), producing a co-authored booklet, presentation decks, and public-facing written pieces.",
       "Presented research to external stakeholders (RIPE NCC, D//F), building organizational visibility and credibility across international digital-policy communities."]},
     {role:"Content Policy Analyst", org:"Safelyy (Freelance)", when:"Jun 2024 – Apr 2025", bullets:[
+      "Reviewed content policies across multiple social media platforms for how they affect creators' reach and income.",
       "Created an extensive policy playbook for multiple social media platforms, including Pinterest and X (formerly Twitter), detailing guidelines and procedures for content moderation, user interactions, and crisis management.",
       "Assessed the impact of online content regulations, including how false positives lead to demonetization and shadowbanning, and advised content creators on navigating platform communications to restore their content.",
       "Partnered with international teams and a variety of stakeholders to deliver detailed policy reports that keep content creators from being demonetized and penalized."]},
     {role:"Account Manager / Microsoft Liaison", org:"SHI International", when:"Oct 2022 – Aug 2023", bullets:[
-      "Managed client communications and purchasing pipelines for public-sector education accounts across Missouri and the Northeast.",
-      "Contributed to a 15% increase in territory sales for the State of Missouri; recipient of the President's Club award."]}
+      "Managed client relationships, communications and purchasing pipelines for public-sector education accounts across Missouri and the Northeast, serving as the liaison with Microsoft.",
+      "Helped grow the State of Missouri territory by 15%; recipient of the President's Club award."]}
   ],
   fellowships: [
     {role:"President and Senior Fellow", org:"The Internet Law and Policy Foundry", when:"Jan 2023 – Jan 2025", bullets:[
       "Elected president; owned organization-wide communication strategy and editorial content direction for a fellowship program at the intersection of internet law, policy, and technology.",
       "Directed marketing and content strategy for public programming, including the Digital Policy Trivia Night and a full-scale digital policy hackathon, from concept through execution.",
-      "Wrote and edited published opinion editorials on responsible technology and policy, building and sustaining the organization's public editorial voice."]},
+      "Published opinion pieces on responsible technology and policy on the organization's Substack, and edited fellows' written work before publication."]},
     {role:"Research Group Member", org:"Center for AI and Digital Policy", when:"Sep 2024 – Nov 2024", bullets:[
       "Studied and analyzed international AI policy frameworks and key regulations, including the Universal Guidelines for AI and the EU AI Act, translating findings into content for public commentary.",
       "Monitored and synthesized significant AI policy news and developments into updates for policymakers and the public.",
@@ -546,7 +558,7 @@ function mapLayout(pieces){
    ============================================================ */
 const PAGES = {
   writing:{title:"Writing", desc:"Essays, criticism and policy research on money, technology and the rules that govern them."},
-  strategy:{title:"Strategy", desc:"Plans I've built for organizations and for my own practice."},
+  strategy:{title:"Strategy", desc:"Campaigns, programs and plans I've built for organizations."},
   resume:{title:"Resume", desc:"Roles, education and skills."},
   about:{title:"About", desc:"The long version."}
 };
@@ -572,7 +584,7 @@ function home(){
   const hl = PROFILE.highlights.map(id=>BLOCKS.find(b=>b.id===id)).filter(Boolean).slice(0,3);
   const idx = [
     ["writing","Writing","essays, criticism and policy research"],
-    ["strategy","Strategy","plans for organizations and my own practice"],
+    ["strategy","Strategy","campaigns, programs and plans"],
     ["resume","Resume","roles, education and skills"],
     ["about","About","the long version"]
   ];
@@ -636,12 +648,12 @@ function strategyPage(){
     const th = (k,label) => `<th aria-sort="${sk===k?(dir>0?"ascending":"descending"):"none"}"><button data-sort="${k}">${label}</button></th>`;
     return `${head("strategy", null)}
   <div class="stable-wrap"><table class="stable">
-    <thead><tr>${th("title","Plan")}${th("field","Field")}${th("tags","Focus")}${th("year","Year")}</tr></thead>
+    <thead><tr>${th("title","Project")}${th("field","Field")}${th("tags","Focus")}${th("year","Year")}</tr></thead>
     <tbody>${rows.map(({b})=>`
       <tr class="r" data-row="${b.id}" tabindex="0" aria-expanded="${!!state.open[b.id]}"><td class="ti">${esc(b.title)}</td><td class="fd">${esc(b.source)}</td><td class="tg">${esc(b.channels.join(", "))}</td><td class="yr">${esc(b.year)}</td></tr>
       ${state.open[b.id]?`<tr class="x"><td colspan="4"><p class="xl">${esc(b.lede)}</p><div class="xg">${b.secs.map(([h,p])=>`<div><span class="label">${esc(h)}</span><p>${esc(p)}</p></div>`).join("")}</div></td></tr>`:""}`).join("")}</tbody>
   </table></div>
-  <p class="fineprint">Organization names and figures are abstracted for public sharing.</p>`;
+  <p class="fineprint">Internal program names are abstracted for public sharing.</p>`;
   }
   if(style==="lanes") return `${head("strategy", null)}
   <div class="cases v-lanes">${all.map(b=>`
@@ -651,13 +663,13 @@ function strategyPage(){
       <p class="lede">${esc(b.lede)}</p>
       <div class="laps">${b.secs.map(([h,p])=>`<div class="lap"><span class="label">${esc(h)}</span><p>${esc(p)}</p></div>`).join("")}</div>
     </article>`).join("")}</div>
-  <p class="fineprint">Organization names and figures are abstracted for public sharing.</p>`;
+  <p class="fineprint">Internal program names are abstracted for public sharing.</p>`;
   const BANDS = [["#EEF1FA","#0E1640","#7F89AE","#14246B"],["#C9D3F0","#0E1640","#56628F","#14246B"],["#3A4FA8","#FFFFFF","#C2CCF2","#0F1B55"],["#1A2766","#FFFFFF","#97A4DB","#0A1240"],["#070C1E","#E6EAFF","#7983AE","#1F2F86"]];
   const n = all.length;
   const band = i => BANDS[n>1 ? Math.round(i/(n-1)*(BANDS.length-1)) : 0];
   const depthLabel = i => i===0 ? "Shallow end" : (i===n-1 ? "Deep end" : `${3+i*2} ft`);
   const deepStyle = i => { const [bg,fg,sb,sq]=band(i), prev = i ? band(i-1)[0] : "var(--bg)"; return ` style="--band:${bg};--prev:${prev};--bfg:${fg};--bsub:${sb};--bsq:${sq}"`; };
-  return `${head("strategy", [["Length", `${all.length} plans`], ["Note", "Organization names and figures are abstracted for public sharing."]])}
+  return `${head("strategy", [["Length", `${all.length} projects`], ["Note", "Internal program names are abstracted for public sharing."]])}
   <div class="cases v-${style}">${all.map((b,i)=>`
     <article class="case" id="case-${b.id}"${style==="deep"?deepStyle(i):""}>
       ${style==="deep"?`<span class="depth">${depthLabel(i)}</span>`:""}
@@ -724,7 +736,7 @@ function open(id){
   $("#dlg-side").innerHTML = `
     <div><span class="label">Connected to</span><ul>${b.channels.map(c=>`<li><button class="lnk" data-goto="${b.type}" data-chan-go="${esc(c)}">${esc(c)}</button></li>`).join("")}</ul></div>
     ${others.length?`<div><span class="label">Related</span><ul>${others.map(o=>`<li><button class="lnk" data-open="${o.id}">${esc(o.title)}</button></li>`).join("")}</ul></div>`:""}
-    ${b.type==="strategy"&&b.source!=="Own practice"?`<p class="note">Organization and figures are abstracted for public sharing.</p>`:""}`;
+    ${b.type==="strategy"&&b.source!=="Own practice"?`<p class="note">Internal program names are abstracted for public sharing.</p>`:""}`;
   const d = $("#dlg");
   if(!d.open){ try{ d.showModal(); }catch(e){ d.setAttribute("open",""); } }
   $("#dlg-main").scrollTop = 0;
@@ -734,13 +746,15 @@ document.addEventListener("click", e => {
   const o = e.target.closest("[data-open]"); if(o){ open(o.dataset.open); return; }
   const g = e.target.closest("[data-chan-go]");
   if(g){ $("#dlg").close(); state.channel=g.dataset.chanGo; state.q=""; $("#q").value="";
-    if(g.dataset.goto==="strategy"){ location.hash="strategy"; return; }
-    if(location.hash.slice(1)===g.dataset.goto){ render(); } else { state.keepChannel=true; location.hash=g.dataset.goto; } window.scrollTo(0,0); return; }
+    if(g.dataset.goto==="strategy"){ go("strategy"); return; }
+    if(state.page===g.dataset.goto){ render(); } else { state.keepChannel=true; go(g.dataset.goto); } window.scrollTo(0,0); return; }
   const so = e.target.closest("[data-sort]"); if(so){ const k=so.dataset.sort; state.sortDir = state.sortKey===k ? -(state.sortDir||1) : (k==="year"?-1:1); state.sortKey=k; render(); return; }
   const rw = e.target.closest("[data-row]"); if(rw){ state.open=state.open||{}; state.open[rw.dataset.row]=!state.open[rw.dataset.row]; render(); return; }
   const c = e.target.closest("[data-chan]"); if(c){ state.channel=c.dataset.chan||null; render(); return; }
   const b = e.target.closest("[data-id]"); if(b){ open(b.dataset.id); return; }
-  if(e.target.closest('a[href^="#"]')){ state.q=""; $("#q").value=""; }
+  const a = e.target.closest('a[href^="#"]');
+  if(a){ state.q=""; $("#q").value=""; const k=a.getAttribute("href").slice(1);
+    if(PAGE_KEYS.includes(k) || k==="home"){ e.preventDefault(); go(k); } }
 });
 document.addEventListener("mouseover", e => {
   const n = e.target.closest("[data-hover]"); const map = $("#map"); if(!map || map.classList.contains("focus")) return;
@@ -751,14 +765,22 @@ $("#dlg-close").addEventListener("click", () => $("#dlg").close());
 $("#dlg").addEventListener("click", e => { if(e.target.id==="dlg") e.target.close(); });
 $("#q").addEventListener("input", e => { state.q=e.target.value; render(); });
 
-function route(){
-  const h = location.hash.slice(1);
-  state.page = ["writing","strategy","resume","about"].includes(h) ? h : "home";
+const PAGE_KEYS = ["writing","strategy","resume","about"];
+// Switch pages without depending on the browser's hash navigation,
+// so links work in previews and embedded viewers as well as the live site.
+function go(k){
+  try { if(location.hash.slice(1)!==k) history.pushState(null, "", "#"+k); } catch(err) {}
+  route(k);
+}
+function route(force){
+  const h = typeof force==="string" ? force : location.hash.slice(1);
+  state.page = PAGE_KEYS.includes(h) ? h : "home";
   if(!state.keepChannel) state.channel = null;
   state.keepChannel = false;
   render(); window.scrollTo(0,0);
 }
-window.addEventListener("hashchange", route);
+window.addEventListener("hashchange", () => route());
+window.addEventListener("popstate", () => route());
 route();
 </script>
 </body>
